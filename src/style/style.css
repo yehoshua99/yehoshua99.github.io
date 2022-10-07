@@ -1,0 +1,429 @@
+
+*{
+    padding: 0px;
+}
+
+.BG {
+    height: 100vh;
+    background-color: rgb(218, 231, 233);
+
+}
+.BCR {
+    background-color: rgb(195, 43, 226);
+    width: 100px;
+    text-align: center;
+
+}
+.intro1 {
+    height: 565px;
+    display: flex;
+}
+.intro2 {
+    height: 300px;
+}
+
+.DescIntro{
+    display: flex;
+    align-items: center;
+}
+
+.mercyintro {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 300px;
+}
+
+.Container-mercy{
+    display: flex;
+    align-items: flex-end;
+    height: 210px;
+    background-color: blue;
+    border-top-left-radius: 100px;
+}
+.mobilmercy {
+    width: 504px;
+    height: 307px;
+}
+.BG2 {
+    height: 100vh;
+}
+
+
+.ourservice{
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    height: 100vh;
+    /* padding: 80px; */
+}
+
+.BG3 {
+    height: 100vh;
+    /* background-color: tomato; */
+}
+.whyus {
+    height: 100vh;
+    width: auto;
+    /* padding-top: 90px; */
+    margin: 0px;
+}
+.kartu {
+    /* background-color: aqua; */
+    padding-top: 100px;
+}
+.BG4 {
+    /* background-color: tomato; */
+    height: 100vh;
+    padding: 10px;
+}
+.con {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.headertesti{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.carousel {
+    padding: 0px 200px 0px 200px;
+    margin-bottom: 20px;
+}
+.covercarousel {
+    /* height: 300px; */
+    width: 800px !important;
+   
+}
+.carouselcard {
+    height: 220px;
+    width: 640px !important;
+    /* background-color: aqua; */
+    justify-items: center;
+    padding-left: 70px;
+  
+}
+.CardCarousel{
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.TextCarousel {
+    
+    align-items: center;
+}
+.ConCard {
+    background-color: rgb(184, 184, 184);
+    border-radius: 30px;
+    display: flex;
+    width: 700px !important;
+}
+.Texttesti{
+    padding: 10px 0px 0px 0px;
+}
+.sewamobil{
+    background-color: blue;
+    border-radius: 30px;
+    height: 190px;
+    width: 815px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 30px;
+    color: white;
+}
+.descsewa{
+    color: white;
+    font-size: 1rem;
+    padding: 0px 63px;
+    /* text-align: center; */
+}
+.btnsewa{
+    width: 159px;
+    margin-bottom: 8px;
+}
+
+.BG5 {
+    height: 100vh;
+}
+.descFAQ {
+    padding-top: 40px;
+}
+.dropdon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.faqAndDropDown{
+    padding: 65px 0px 90px 0px;
+}
+.faq {
+    height: 100vh;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-around; */
+}
+.LogoBinar{
+    height: 30px;
+    width: 105px;
+    background-color: blue;
+}
+.BG6{
+    background-color: rgb(218, 231, 233);
+    height: 100vh;
+}
+.ContainerAllSearch{
+    position: relative;
+    top: -16px;
+    padding-left: 0px;
+}
+.ContainerHeader{
+    background-color: rgb(218, 231, 233);
+    position: relative;
+    width: 800px;
+    
+}
+.ContainerSearch{
+    position: absolute;
+    left: 90px;
+    top: 265px;
+    
+    
+}
+.RowSearch {
+    width: 1050px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 5px -3px 38px 3px rgba(0,0,0,0.52);
+    -webkit-box-shadow: 5px -3px 38px 3px rgba(0,0,0,0.52);
+    -moz-box-shadow: 5px -3px 38px 3px rgba(0,0,0,0.52);
+}
+.BG7{
+    background-color: tomato;
+    height: 200vh;
+
+}
+.FooterSearch {
+    background-color: white;
+    padding-top: 50px;
+}
+/* .ContainerIntro{
+    background-color: tomato;
+    width: 100px;
+} */
+
+.HasilPencarianAll{
+    position: relative;
+    top: -16px;
+}
+.cobaRow {
+    background-color: rgb(218, 231, 233);
+    width: auto;
+    height: 200px;
+}
+.ContainerSearchResult{
+    position: absolute;
+    left: 90px;
+    top: 165px;
+
+}
+.ContainerCard{
+    margin-top: 60px;
+    height: 610px;
+    padding-left: 90px !important;
+}
+.BG8{
+    height: 200vh;
+    background-color: tomato;
+}
+.cobaRowDetail{
+    /* background-color: rgb(218, 231, 233);
+   
+    width: 800px; */
+
+}
+
+
+
+@media screen and (max-width: 577px) {
+    .intro1 {
+        height: 565px;
+        display: flex;
+    }
+    .Title{
+        font-size: 2rem;
+    }
+    .DescIntro{
+        display: flex;
+        align-items: center;
+        margin-bottom: 5px;
+    }
+    .mercyintro {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        height: 279px;
+    }
+    
+    .Container-mercy{
+        display: flex;
+        align-items: flex-end;
+        height: 129px;
+        background-color: blue;
+        border-top-left-radius: 38px;
+    }
+    .mobilmercy {
+        width: 398px;
+        height: 250px;
+        position: relative;
+    left: 25px;
+        
+    }
+    .BG2 {
+        height: 105vh;
+    }
+    .ourservice{
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        flex-wrap: nowrap !important;
+        padding: 9px 23px 0px 54px;
+    }
+    .wanita{
+        width: 362px;
+        height: 322px;
+        margin-bottom: 20px;
+        /* margin-top: 30px; */
+    }
+    .fontour > p {
+        font-size: 1.1rem ;
+    }
+    .BG3 {
+        height: 130vh;
+        /* background-color: tomato; */
+    }
+    .whyus {
+        height: 100vh;
+        width: auto;
+        margin-top: 213px;
+        padding-left: 20px;
+    }
+    .kartu {
+        padding-top: 1px;
+        padding-left: 10px !important; 
+        row-gap: 13px;
+    }
+    .con {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .BG4 {
+        /* background-color: tomato; */
+        height: 150vh;
+        padding: 10px;
+    }
+    .headertesti{
+        text-align: center;
+        margin-bottom: 20px;
+        /* background-color: aquamarine; */
+    }
+    .covercarousel {
+        height: 335px;
+        width: 800px !important;
+        
+    
+    }
+    .carouselcard {
+        height: 300px;
+        width: 437px !important;
+        /* background-color: aqua; */
+        justify-items: center;
+        padding-left: 0px 51px;
+    }
+    .carousel {
+        padding: 0px 3px 0px 2px;
+        margin-bottom: 1px;
+    }
+    .ConCard {
+        background-color: rgb(184, 184, 184);
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        width: 700px !important;
+    }
+    .ContainerSewaMobilTesti{
+        width: auto;
+        padding: 0px 104px;
+    }
+    .sewamobil{
+        background-color: blue;
+        border-radius: 30px;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
+    }
+    .sewamobil > h3 {
+        color: white;
+        font-size: 2rem;
+        padding: 10px 10px 0px 10px;
+    }
+    .descsewa{
+        font-size: 1rem;
+        color: white;
+        padding: 0px 30px 0px 30px;
+    }
+    .btnsewa{
+        width: 159px;
+        margin-bottom: 19px;
+    }
+    
+    .con {
+        height: 100vh;
+        /* display: flex;
+        flex-direction: column;
+        justify-content: space-around; */
+    }
+    .BG5 {
+        height: 200vh;
+       
+    }
+    .faqAndDropDown{
+        padding: 23px 0px 90px 0px;
+    }
+    .descFAQ{
+        padding: 0px 0px 0px 0px !important;
+    }
+    .descFAQ > p {
+        margin-bottom: 65px;
+        margin-top: 45px;
+        text-align: center;
+    }
+    .descFAQ > h3 {
+        font-size: 29px;
+        text-align: center;
+    }
+
+    .dropdon{
+        display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    white-space: wrap;
+}
+    .Footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .cprt {
+        margin-top: 25px !important;
+    }
+}
