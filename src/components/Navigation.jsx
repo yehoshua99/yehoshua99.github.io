@@ -1,10 +1,22 @@
 import {Container, Nav, Navbar, Offcanvas} from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+
+const menu = [
+  {
+    link1: '/ourservices',
+    link2: '/whyus',
+    link3: '/testimonial',
+    link4: '/frequentlyaskedquestion'
+  }
+  
+]
+
 const Navigation = () => {
     return (
-        <>
+        <div>
           {[ 'lg'].map((expand) => (
-            <Navbar key={expand} bg="light" expand={expand} className="mb-3">
-              <Container fluid>
+            <Navbar key={expand} expand={expand} className=" navbar mb-3">
+              <Container>
                 <Navbar.Brand href="#" className='BCR'>BCR</Navbar.Brand>
                 <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
                 <Navbar.Offcanvas
@@ -18,18 +30,27 @@ const Navigation = () => {
                     </Offcanvas.Title>
                   </Offcanvas.Header>
                   <Offcanvas.Body>
-                    <Nav className="justify-content-end flex-grow-1 pe-3">
-                      <Nav.Link href="#action1">Our Services</Nav.Link>
-                      <Nav.Link href="#action2">Why Us</Nav.Link>
-                      <Nav.Link href="#action2">Testimony</Nav.Link>
-                      <Nav.Link href="#action2">FAQ</Nav.Link>
+                   
+                  {menu.map(({link1,link2,link3,link4}) => {
+                      return(
+                        <Nav className="justify-content-end flex-grow-1 pe-3 ">
+                        <div className='menuNav'>
+                            <Link to={link1}><a>Our Services</a></Link>
+                            <Link to={link2}>Why Us</Link>
+                            <Link to={link3}>Testimony</Link>
+                            <Link to={link4}>FAQ</Link>
+                        </div>
+                    
                     </Nav>
+                      )
+                    })}
+                    
                   </Offcanvas.Body>
                 </Navbar.Offcanvas>
               </Container>
             </Navbar>
           ))}
-        </>
+        </div>
       );
 }
 

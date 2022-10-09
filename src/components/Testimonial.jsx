@@ -1,14 +1,19 @@
 import { Container, Row, Col, Carousel, Image, Button} from "react-bootstrap"
+import { Link } from "react-router-dom"
 import testi1 from "../assets/ImagesPRJ/img_testi1.png"
 import testi2 from "../assets/ImagesPRJ/img_testi2.png"
 import star from "../assets/ImagesPRJ/Star.png"
 
-
+const btnSearch = [
+    {
+        linkbtn:'/searchcar'
+    }
+]
 
 const Testimonial = () => {
     return(
         <div >
-            <Container className="con border" >
+            <Container className="con" >
                 <Row className="headertesti ">
                     <Col>
                         <h3>Testimonial</h3>
@@ -17,8 +22,8 @@ const Testimonial = () => {
                 </Row>
 
                 <Row className="carousel "> 
-                <Carousel className="covercarousel border">
-                        <Carousel.Item className="carouselcard border ">
+                <Carousel className="covercarousel ">
+                        <Carousel.Item className="carouselcard  ">
                             <Row>
                                 
 
@@ -37,7 +42,7 @@ const Testimonial = () => {
                            </Row>
                         </Carousel.Item>
 
-                        <Carousel.Item className="carouselcard border ">
+                        <Carousel.Item className="carouselcard ">
                             <Row>
                                 
 
@@ -56,7 +61,7 @@ const Testimonial = () => {
                            </Row>
                         </Carousel.Item>
                         
-                        <Carousel.Item className="carouselcard border ">
+                        <Carousel.Item className="carouselcard ">
                             <Row>
                                 
 
@@ -81,11 +86,16 @@ const Testimonial = () => {
                         </Carousel>
                 </Row>
 
-                <Row className="ContainerSewaMobilTesti border justify-content-center">
+                <Row className="ContainerSewaMobilTesti justify-content-center">
                     <Col className="sewamobil border col-md-7">
                         <h3>Sewa Mobil di Madiun Sekarang</h3>
                         <p className="descsewa">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque aspernatur blanditiis ad, sapiente, est nesciunt vitae adipisci sit voluptate veritatis at quasi saepe maiores id inventore mollitia laudantium, quae omnis!</p>
-                        <Button variant="success" href="#" className="btnsewa">Mulai Sewa Mobil</Button>
+                        
+                        {btnSearch.map(({linkbtn}) => {
+                            return(
+                                <Link to={linkbtn}><Button variant="success" className="btnsewa">Mulai Sewa Mobil</Button></Link>
+                            )
+                        })}
                         
                     </Col>
                 </Row>

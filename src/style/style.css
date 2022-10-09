@@ -8,11 +8,23 @@
     background-color: rgb(218, 231, 233);
 
 }
+.navbar{
+    background-color: rgb(218, 231, 233);
+}
 .BCR {
     background-color: rgb(195, 43, 226);
     width: 100px;
     text-align: center;
-
+}
+.menuNav{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    color: black;
+}
+.menuNav > a {
+    color: black;
+    text-decoration: none;
 }
 .intro1 {
     height: 565px;
@@ -60,13 +72,11 @@
 
 .BG3 {
     height: 100vh;
-    /* background-color: tomato; */
 }
 .whyus {
     height: 100vh;
     width: auto;
-    /* padding-top: 90px; */
-    margin: 0px;
+    
 }
 .kartu {
     /* background-color: aqua; */
@@ -202,6 +212,11 @@
     box-shadow: 5px -3px 38px 3px rgba(0,0,0,0.52);
     -webkit-box-shadow: 5px -3px 38px 3px rgba(0,0,0,0.52);
     -moz-box-shadow: 5px -3px 38px 3px rgba(0,0,0,0.52);
+    align-items: center;
+}
+.SearchCarPencarian{
+    display: flex;
+    justify-content: center;
 }
 .BG7{
     background-color: tomato;
@@ -233,9 +248,11 @@
 
 }
 .ContainerCard{
+    display: flex;
     margin-top: 60px;
     height: 610px;
     padding-left: 90px !important;
+    justify-content: space-around;
 }
 .BG8{
     height: 200vh;
@@ -254,6 +271,14 @@
     .intro1 {
         height: 565px;
         display: flex;
+    }
+    .menuNav{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 300px;
+        height: 200px;
+        color: black;
     }
     .Title{
         font-size: 2rem;
@@ -311,7 +336,7 @@
     .whyus {
         height: 100vh;
         width: auto;
-        margin-top: 213px;
+        margin-top: 50px;
         padding-left: 20px;
     }
     .kartu {
@@ -398,6 +423,8 @@
     }
     .faqAndDropDown{
         padding: 23px 0px 90px 0px;
+        display: flex;
+        flex-direction: column;
     }
     .descFAQ{
         padding: 0px 0px 0px 0px !important;

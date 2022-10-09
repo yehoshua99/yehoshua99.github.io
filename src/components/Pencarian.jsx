@@ -1,12 +1,61 @@
-import { Container,Row, Col, Image, Button, Form} from "react-bootstrap"
+import { Container,Row, Col, Image, Button, Form, Card} from "react-bootstrap"
 import mercy from "../assets/ImagesPRJ/Mercedes Car EQC 300kW Edition - 900x598 1.png"
 import listsosmed from "../assets/ImagesPRJ/list_sosmed.png"
+import axios from "axios"
+import { useEffect } from "react"
+import { Link, useNavigate } from "react-router-dom"
+import { useState } from "react"
+import SearchResultEdit from "./SearchResultEdit"
 
+const menu = [
+    {
+      link1: '',
+
+    }
+    
+  ]
 
 const Pencarian = () => {
+    const navigate = useNavigate();
+    const [cars, setCars] = useState([]);
+    const [searchform, setSearchForm] = useState({
+        name : '',
+        category : '',
+        price : '',
+        status: ''
+    })
+ 
+    useEffect(() => {
+        (async () => {
+            getCars();
+        })();
+    }, []);
+
+    const handleSearch = (e) => {
+        const data = []
+        e.preventDefault();
+        cars.filter(item => item.name == searchform.name).map((item) =>(
+            data.push(item)
+        ))
+        getCars(data);
+    }
+
+
+
+
+    const getCars = async () => {
+        try {
+            const res = await fetch('https://bootcamp-rent-car.herokuapp.com/admin/car');
+            const data = await res.json();
+            const filterData = data.filter(item => item.image !==null)
+            setCars(filterData);
+        }catch (error){
+            console.error(error.message);
+        }
+    }
     return (
         <div className="ContainerAllSearch">
-            <Container className="ContainerHeader">
+            <Container fluid className="ContainerHeader">
                 
                 <Row >
                 <Col className="DescIntro ">
@@ -27,8 +76,8 @@ const Pencarian = () => {
             </Container>
 
             <Container className="ContainerSearch">
-                <Row className="RowSearch border">
-                    <Col className="border">
+                <Row className="RowSearch">
+                    <Col className="">
                         <Form.Group >
                             <Form.Label htmlFor="disabledTextInput">Nama Mobil</Form.Label>
                             <Form.Control id="disabledTextInput" placeholder="Ketik Nama/tipe mobil" />
@@ -63,11 +112,32 @@ const Pencarian = () => {
                                 </Form.Select>
                         </Form.Group>
                     </Col>
-                    <Col>
-                    <Button variant="success" href="#">Cari Mobil</Button>
+                    <Col className="SearchCarPencarian ">
+                        <Button variant="success" href="#">Cari Mobil</Button>
                     </Col>
                 </Row>
             </Container>
+            <Container fluid className='ContainerCard border'>
+            {cars.map((card) =>{
+                return(
+                    <Card style={{ width: '18rem' }}>
+                        <Card.Img variant="top" src={card.image} />
+                            <Card.Body>
+                                <Card.Title>{card.name}</Card.Title>
+                                <Card.Title>Rp. {card.price} /Hari</Card.Title>
+                                <Card.Text>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, illo. Tempore pariatur, dolores rerum esse hic magni odio nulla consequatur dicta aliquam enim! Doloremque dolor amet a expedita laboriosam non!
+                                </Card.Text>
+                                <Link to={SearchResultEdit}><Button variant="primary">Go somewhere</Button></Link>
+
+                        </Card.Body>
+                    </Card>
+
+)
+})}
+</Container>
+
+
 
             <Container fluid>
             <Row className="FooterSearch">

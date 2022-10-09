@@ -5,8 +5,8 @@ import icon_professional from "../assets/ImagesPRJ/icon_professional.png"
 import icon_24hrs from "../assets/ImagesPRJ/icon_24hrs.png"
 const whyus = () => {
     return (
-        <div className=" border whyus">
-            <Container className="Con-why border " >
+        <div className=" whyus">
+            <Container className="Con-why  " >
                 <Row >
                     <Col className="titlewhy text-center">
                         <Col>

@@ -1,8 +1,50 @@
+import { useState } from 'react';
 import {Container, Row, Col,  Button, Form, Card, Image} from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 import listsosmed from "../assets/ImagesPRJ/list_sosmed.png"
+import axios from 'axios';
+import { useEffect } from 'react';
+
 
 
 const HasilPencarian = () => {
+    const navigate = useNavigate();
+    const [cars, setCars] = useState([]);
+    const [searchform, setSearchForm] = useState({
+        name : '',
+        category : '',
+        price : '',
+        status: ''
+    })
+ 
+    useEffect(() => {
+        (async () => {
+            getCars();
+        })();
+    }, []);
+
+    const handleSearch = (e) => {
+        const data = []
+        e.preventDefault();
+        cars.filter(item => item.name == searchform.name).map((item) =>(
+            data.push(item)
+        ))
+        getCars(data);
+    }
+
+
+
+
+    const getCars = async () => {
+        try {
+            const res = await fetch('https://bootcamp-rent-car.herokuapp.com/admin/car');
+            const data = await res.json();
+            const filterData = data.filter(item => item.image !==null)
+            setCars(filterData);
+        }catch (error){
+            console.error(error.message);
+        }
+    }
     return (
       <div className='HasilPencarianAll'>
         <Container fluid>
@@ -10,7 +52,6 @@ const HasilPencarian = () => {
                 <Col className='cobaRow'></Col>
             </Row> 
         </Container>
-
         <Container className="ContainerSearchResult">
                 <Row className="RowSearch border">
                     <Col className="border">
@@ -49,25 +90,31 @@ const HasilPencarian = () => {
                         </Form.Group>
                     </Col>
                     <Col>
-                    <Button variant="success" href="#">Cari Mobil</Button>
+                    <Button variant="success" >Edit</Button>
                     </Col>
                 </Row>
             </Container>
 
-            <Container fluid className='ContainerCard border'>
+                    <Container fluid className='ContainerCard border'>
+            {cars.map((card) =>{
+                return(
                     <Card style={{ width: '18rem' }}>
-                        <Card.Img variant="top" src="holder.js/100px180" />
+                        <Card.Img variant="top" src={card.image} />
                             <Card.Body>
-                                <Card.Title>Card Title</Card.Title>
+                                <Card.Title>{card.name}</Card.Title>
+                                <Card.Title>Rp. {card.price} /Hari</Card.Title>
                                 <Card.Text>
-                                Some quick example text to build on the card title and make up the
-                                bulk of the card's content.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, illo. Tempore pariatur, dolores rerum esse hic magni odio nulla consequatur dicta aliquam enim! Doloremque dolor amet a expedita laboriosam non!
                                 </Card.Text>
                                 <Button variant="primary">Go somewhere</Button>
+
                         </Card.Body>
                     </Card>
-            </Container>
 
+)
+})}
+</Container>
+            
             <Container fluid>
             <Row className="FooterSearch">
                     <Col>
