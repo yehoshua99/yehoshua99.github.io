@@ -1,9 +1,11 @@
 import { Row, Col, Container, Image } from "react-bootstrap"
 import imgservice from "../assets/ImagesPRJ/img_service.png"
 import cheklist from "../assets/ImagesPRJ/Group53.png"
+import Navigation from "./Navigation"
 const Ourservices = () => {
     return (
     <div >
+        <Navigation/>
         <Container >
             <Row className="ourservice">
                 <Col>

@@ -9,7 +9,8 @@ import SearchResultEdit from "./SearchResultEdit"
 
 const menu = [
     {
-      link1: '',
+        id:1,
+        linkBtnSearchCar: '/searchresultedit',
 
     }
     
@@ -113,7 +114,8 @@ const Pencarian = () => {
                         </Form.Group>
                     </Col>
                     <Col className="SearchCarPencarian ">
-                        <Button variant="success" href="#">Cari Mobil</Button>
+                        
+                       <Link to={menu[0].linkBtnSearchCar}><Button variant="success" >Cari Mobil</Button></Link>
                     </Col>
                 </Row>
             </Container>
@@ -160,7 +162,7 @@ const Pencarian = () => {
                     </Col>
 
                     <Col className="cprt">
-                    <p><b>Copyright Binar 2022</b></p>
+                    <p><b>Copyright CarRent 2022</b></p>
                     <Col className="LogoBinar"></Col>
                     </Col>
                 </Row>

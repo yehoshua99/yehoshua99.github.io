@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 const menu = [
   {
+    link0: '/',
     link1: '/ourservices',
     link2: '/whyus',
     link3: '/testimonial',
@@ -17,7 +18,7 @@ const Navigation = () => {
           {[ 'lg'].map((expand) => (
             <Navbar key={expand} expand={expand} className=" navbar mb-3">
               <Container>
-                <Navbar.Brand href="#" className='BCR'>BCR</Navbar.Brand>
+                <Navbar.Brand href="/" className='BCR'></Navbar.Brand>
                 <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
                 <Navbar.Offcanvas
                   id={`offcanvasNavbar-expand-${expand}`}

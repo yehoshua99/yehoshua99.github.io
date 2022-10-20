@@ -3,9 +3,11 @@ import icon_price from "../assets/ImagesPRJ/icon_price.png"
 import jempol from "../assets/ImagesPRJ/jempol.png"
 import icon_professional from "../assets/ImagesPRJ/icon_professional.png"
 import icon_24hrs from "../assets/ImagesPRJ/icon_24hrs.png"
+import Navigation from "./Navigation"
 const whyus = () => {
     return (
         <div className=" whyus">
+            <Navigation/>
             <Container className="Con-why  " >
                 <Row >
                     <Col className="titlewhy text-center">

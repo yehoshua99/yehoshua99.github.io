@@ -3,6 +3,7 @@ import { Link } from "react-router-dom"
 import testi1 from "../assets/ImagesPRJ/img_testi1.png"
 import testi2 from "../assets/ImagesPRJ/img_testi2.png"
 import star from "../assets/ImagesPRJ/Star.png"
+import Navigation from "./Navigation"
 
 const btnSearch = [
     {
@@ -13,6 +14,7 @@ const btnSearch = [
 const Testimonial = () => {
     return(
         <div >
+            <Navigation/>
             <Container className="con" >
                 <Row className="headertesti ">
                     <Col>

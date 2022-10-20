@@ -1,9 +1,11 @@
 import { Container, Row, Col, DropdownButton, Dropdown, ButtonGroup, Image, Accordion} from "react-bootstrap"
 import listsosmed from "../assets/ImagesPRJ/list_sosmed.png"
+import Navigation from "./Navigation"
 
 const FAQ = () => {
     return (
         <div>
+            <Navigation/>
             <Container className="faq">
                 <Row className="faqAndDropDown" >
                     <Col >
@@ -107,7 +109,7 @@ const FAQ = () => {
                     </Col>
 
                     <Col className="cprt">
-                    <p><b>Copyright Binar 2022</b></p>
+                    <p><b>Copyright CarRent 2022</b></p>
                     <Col className="LogoBinar"></Col>
                     </Col>
                 </Row>

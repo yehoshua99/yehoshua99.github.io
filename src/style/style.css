@@ -9,11 +9,12 @@
 
 }
 .navbar{
-    background-color: rgb(218, 231, 233);
+    background-color: rgb(250, 250, 250);
 }
 .BCR {
     background-color: rgb(195, 43, 226);
     width: 100px;
+    height: 40px;
     text-align: center;
 }
 .menuNav{
@@ -200,7 +201,7 @@
 }
 .ContainerSearch{
     position: absolute;
-    left: 90px;
+    left: 150px;
     top: 265px;
     
     
@@ -243,7 +244,7 @@
 }
 .ContainerSearchResult{
     position: absolute;
-    left: 90px;
+    left: 150px;
     top: 165px;
 
 }
