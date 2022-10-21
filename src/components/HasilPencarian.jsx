@@ -53,13 +53,13 @@ const HasilPencarian = () => {
         </Container>
         <Container className="ContainerSearchResult">
                 <Row className="RowSearch border">
-                    <Col className="border">
+                    <Col >
                         <Form.Group >
                             <Form.Label htmlFor="disabledTextInput">Nama Mobil</Form.Label>
                             <Form.Control id="disabledTextInput" placeholder="Ketik Nama/tipe mobil" />
                         </Form.Group>
                     </Col>
-                    <Col className="border">
+                    <Col>
                         <Form.Group >
                                 <Form.Label>Kategori</Form.Label>
                                 <Form.Select>
@@ -69,7 +69,7 @@ const HasilPencarian = () => {
                                 </Form.Select>
                         </Form.Group>
                     </Col>
-                    <Col className="border">
+                    <Col>
                         <Form.Group >
                                 <Form.Label>Harga</Form.Label>
                                 <Form.Select>
@@ -79,7 +79,7 @@ const HasilPencarian = () => {
                                 </Form.Select>
                         </Form.Group>
                     </Col>
-                    <Col className="border">
+                    <Col>
                         <Form.Group >
                                 <Form.Label htmlFor="disabledSelect">Status</Form.Label>
                                 <Form.Select>

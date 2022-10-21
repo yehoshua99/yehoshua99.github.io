@@ -83,7 +83,7 @@ const Pencarian = () => {
                             <Form.Control id="disabledTextInput" placeholder="Ketik Nama/tipe mobil" />
                         </Form.Group>
                     </Col>
-                    <Col className="border">
+                    <Col>
                         <Form.Group >
                                 <Form.Label>Kategori</Form.Label>
                                 <Form.Select>
@@ -93,7 +93,7 @@ const Pencarian = () => {
                                 </Form.Select>
                         </Form.Group>
                     </Col>
-                    <Col className="border">
+                    <Col>
                         <Form.Group >
                                 <Form.Label>Harga</Form.Label>
                                 <Form.Select>
@@ -103,7 +103,7 @@ const Pencarian = () => {
                                 </Form.Select>
                         </Form.Group>
                     </Col>
-                    <Col className="border">
+                    <Col>
                         <Form.Group >
                                 <Form.Label htmlFor="disabledSelect">Status</Form.Label>
                                 <Form.Select>
