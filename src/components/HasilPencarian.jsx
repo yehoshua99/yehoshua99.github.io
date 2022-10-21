@@ -2,7 +2,6 @@ import { useState } from 'react';
 import {Container, Row, Col,  Button, Form, Card, Image} from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import listsosmed from "../assets/ImagesPRJ/list_sosmed.png"
-import axios from 'axios';
 import { useEffect } from 'react';
 
 

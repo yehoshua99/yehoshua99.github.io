@@ -1,7 +1,6 @@
 import { Container,Row, Col, Image, Button, Form, Card} from "react-bootstrap"
 import mercy from "../assets/ImagesPRJ/Mercedes Car EQC 300kW Edition - 900x598 1.png"
 import listsosmed from "../assets/ImagesPRJ/list_sosmed.png"
-import axios from "axios"
 import { useEffect } from "react"
 import { Link, useNavigate } from "react-router-dom"
 import { useState } from "react"
