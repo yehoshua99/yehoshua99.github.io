@@ -26,8 +26,8 @@ const Navigation = () => {
                   placement="end"
                 >
                   <Offcanvas.Header closeButton>
-                    <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                      <b>BCR</b>
+                    <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`} >
+                      <a href="/" className='bcrHumberger'><b>BCR</b></a>
                     </Offcanvas.Title>
                   </Offcanvas.Header>
                   <Offcanvas.Body>
