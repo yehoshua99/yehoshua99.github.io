@@ -17,7 +17,7 @@ const Ourservices = () => {
                 <Col>
                     <Col className="fontour">
                         <h3><b>Best Car Rental for any kind of trip in Madiun !</b></h3>
-                        <p><b>Sewa mobil di Madiun bersama Binar Car Rental jaminan harga lebih murah dibandingkan yang lain, kondisi mobil baru, serta kualitas pelayanan terbaik untuk perjalanan wisata, bisnis, wedding, meeting, dll.</b></p>
+                        <p><b>Sewa mobil di Madiun bersama Car Rental jaminan harga lebih murah dibandingkan yang lain, kondisi mobil baru, serta kualitas pelayanan terbaik untuk perjalanan wisata, bisnis, wedding, meeting, dll.</b></p>
                             <p> <Image src={cheklist} alt="centang"/> <b>Sewa Mobil Dengan Supir di Bali 12 Jam</b> </p>
                             <p> <Image src={cheklist} alt="centang"/> <b>Sewa Mobil Lepas Kunci di Bali 24 Jam</b> </p>
                             <p> <Image src={cheklist} alt="centang"/> <b>Sewa Mobil Jangka Panjang Bulanan</b> </p>

@@ -17,7 +17,7 @@ const Intro = () => {
                     <Col className="DescIntro ">
                         <Col className=" ">
                             <h1 className="Title">  <b>Sewa & Rental Mobil Terbaik di Kawasan Madiun</b></h1>
-                            <p className="">Slamat datang di Binar Car Rental. Kami menyediakan mobil kualitas terbaik dengan harga terjangkau. Selalu siap melayani kebutuhanmu untuk sewa mobil selama 24 jam.</p>
+                            <p className="">Slamat datang di Car Rental kami. Kami menyediakan mobil kualitas terbaik dengan harga terjangkau. Selalu siap melayani kebutuhanmu untuk sewa mobil selama 24 jam.</p>
 
                             {btnSearch.map(({linkbtn}) => {
                                 return(
